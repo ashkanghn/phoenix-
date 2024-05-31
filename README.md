@@ -22,7 +22,7 @@ Check if mid^2 is equal to n. If so, jump to done.
 If mid^2 is less than n, adjust lo to mid + 1 and jump back to the start of the loop.
 If mid^2 is greater than n, adjust hi to mid - 1 and check if the loop should continue.
 
-The ebreak instruction is used to exit the program, which may need to be replaced by an actual exit system call depending on the execution environment.\
+The ebreak instruction is used to exit the program, which may need to be replaced by an actual exit system call depending on the execution environment.
 
 
 
