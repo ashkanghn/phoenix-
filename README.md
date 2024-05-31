@@ -27,3 +27,21 @@ The ebreak instruction is used to exit the program, which may need to be replace
 
 
 ## report 2
+
+The function saves the necessary registers on the stack.
+The base address of the array and indices are stored in s0, s1, and s2.
+If end is less than start, the function returns.
+The PARTITION function is called to get the pivot index.
+QuickSort is recursively called for the subarrays before and after the pivot.
+The saved registers are restored, and the function returns.
+
+The function saves the return address on the stack.
+The pivot element is set to the last element of the current subarray.
+The main loop iterates over the subarray, swapping elements as needed to partition around the pivot.
+After the loop, the pivot is placed in its correct position.
+The new pivot index (i + 1) is returned.
+
+
+EXIT:
+ebreak  # Exit the program
+The program exits by triggering a breakpoint.
